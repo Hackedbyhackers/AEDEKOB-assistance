@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AEDEKOB - Assistance aux Enfants en Détresse de Koume Bonis et Environs</title>
+  <meta name="description" content="Assistance aux Enfants en Détresse de Koume Bonis et Environs (AEDEKOB)">
+  <style>
+    :root {
+      --primary: #1e3c72;
+      --secondary: #2a5298;
+      --accent: #00b894;
+      --light: #f1f2f6;
+      --dark: #2d3436;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom right, #ffffff, #dff9fb);
+      color: var(--dark);
+    }
+    header {
+      background: linear-gradient(90deg, var(--primary), var(--secondary));
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+      position: relative;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 3em;
+      animation: slideInDown 1.5s ease;
+    }
+    header p {
+      font-size: 1.4em;
+      animation: slideInUp 1.5s ease;
+    }
+    @keyframes slideInDown {
+      from {transform: translateY(-50px); opacity: 0;}
+      to {transform: translateY(0); opacity: 1;}
+    }
+    @keyframes slideInUp {
+      from {transform: translateY(50px); opacity: 0;}
+      to {transform: translateY(0); opacity: 1;}
+    }
+    section {
+      padding: 50px 20px;
+      background: var(--light);
+      border-bottom: 4px solid #dcdde1;
+    }
+    section h2 {
+      color: var(--accent);
+      text-align: center;
+      font-size: 2.2em;
+      margin-bottom: 30px;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      max-width: 900px;
+      margin: auto;
+    }
+    ul li {
+      background: linear-gradient(to right, #f5f7fa, #c3cfe2);
+      margin: 12px 0;
+      padding: 20px;
+      border-left: 10px solid var(--accent);
+      border-radius: 8px;
+      font-size: 1.1em;
+      animation: fadeIn 1s ease;
+    }
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateX(-20px);}
+      to {opacity: 1; transform: translateX(0);}
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .gallery img {
+      width: 45%;
+      max-width: 500px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    footer {
+      background: var(--primary);
+      color: white;
+      text-align: center;
+      padding: 25px;
+      font-size: 1em;
+    }
+    .bubble {
+      position: absolute;
+      border-radius: 50%;
+      opacity: 0.2;
+      animation: float 30s infinite ease-in-out;
+    }
+    .bubble1 { width: 100px; height: 100px; background: #fff; top: 40px; left: 5%; }
+    .bubble2 { width: 150px; height: 150px; background: #c8d6e5; top: 120px; left: 70%; }
+    .bubble3 { width: 80px; height: 80px; background: #dff9fb; top: 200px; left: 30%; }
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-40px); }
+      100% { transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="bubble bubble1"></div>
+    <div class="bubble bubble2"></div>
+    <div class="bubble bubble3"></div>
+    <h1>AEDEKOB</h1>
+    <p>Assistance aux Enfants en Détresse de Koume Bonis et Environs</p>
+  </header>
+
+  <section>
+    <h2>Nos Missions</h2>
+    <ul>
+      <li>Éducation et encadrement des enfants vulnérables</li>
+      <li>Promotion et protection des droits de l’enfant</li>
+      <li>Scolarisation et maintien en milieu scolaire</li>
+      <li>Accompagnement des jeunes filles et lutte contre les violences</li>
+      <li>Insertion professionnelle et formation</li>
+      <li>Sensibilisation à l’environnement et aux valeurs communautaires</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Notre Stand AEDEKOB</h2>
+    <div class="gallery">
+      <img src="stand1.jpg" alt="Stand AEDEKOB 1">
+      <img src="stand2.jpg" alt="Stand AEDEKOB 2">
+    </div>
+  </section>
+
+  <section>
+    <h2>Domaine d'intervention</h2>
+    <ul>
+      <li>Éducation, insertion et protection des enfants en détresse</li>
+      <li>Développement durable et sensibilisation environnementale</li>
+      <li>Autonomisation des jeunes et des femmes</li>
+      <li>Actions sociales de proximité et solidarité communautaire</li>
+      <li>Soutien alimentaire, vestimentaire et sanitaire</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 AEDEKOB. Créé avec cœur pour un avenir meilleur.</p>
+  </footer>
+</body>
+</html>
