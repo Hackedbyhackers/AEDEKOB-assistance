@@ -1,0 +1,2 @@
+# AEDEKOB-assistance
+Assistance humaine
